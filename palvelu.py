@@ -5,5 +5,5 @@ def app(environ, respond):
     salanimi = nimi.replace('a', 'apa').replace('i', 'ipi') \
             .replace('n', '<b>non</b>').replace('na', 'nana')
     yield "<h1>huomio!</h1>".encode('utf-8')
-    yield ("<p>salainen <em>nimesi</em> on: %s</p>" % salanimi).encode('utf-8')
+    yield ("<p><em>nimesi</em> on: %s</p>" % nimi).encode('utf-8')
 
